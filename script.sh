@@ -7,7 +7,7 @@ set -uox pipefail
 echo "Hello from tests step."
 PATH_CHECK_STATUS=$?
 
-sh ./run_tests.sh
+sh ./tests/run_tests.sh
 TESTS_EXIT_STATUS=$?
 
 sh ./clean_up.sh
