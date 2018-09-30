@@ -4,7 +4,7 @@
 # immediately exit if 'run_tests' failed
 set -uox pipefail
 
-echo "$PATH"
+echo "Hello from tests step."
 PATH_CHECK_STATUS=$?
 
 sh ./run_tests.sh
@@ -15,6 +15,5 @@ sh ./clean_up.sh
 env | grep -i -E 'git|node'
 
 echo $TESTS_EXIT_STATUS
-echo $PATH_CHECK_STATUS
 
 exit $TESTS_EXIT_STATUS
