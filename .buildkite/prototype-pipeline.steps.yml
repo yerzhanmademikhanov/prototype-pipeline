@@ -1,0 +1,5 @@
+steps:
+  - name: "Run tests"
+    command: "test/script.sh"
+    agents:
+      queue: default
