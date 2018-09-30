@@ -10,8 +10,6 @@ PATH_CHECK_STATUS=$?
 sh ./tests/run_tests.sh
 TESTS_EXIT_STATUS=$?
 
-sh ./clean_up.sh
-
 env | grep -i -E 'git|node'
 
 echo $TESTS_EXIT_STATUS
